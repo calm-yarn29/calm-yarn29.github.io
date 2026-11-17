@@ -1,0 +1,1050 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>极品反差爆料-网络热点反差案例观察</title>
+<meta name="description" content="极品反差爆料聚焦网络热点中的反差案例：从官方通报、平台原文与时间线出发，整理形象与事实落差、信息澄清与争议进展，附FAQ与读者评论。">
+<meta name="keywords" content="极品反差爆料">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231c2340'/%3E%3Ccircle cx='24' cy='24' r='10' fill='%23ff8f5a'/%3E%3Ccircle cx='40' cy='40' r='10' fill='%23ffd166'/%3E%3Cpath d='M24 34v10h10' stroke='%23fff' stroke-width='4' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+<style>
+:root{
+  --ink:#1c2340;
+  --ink-2:#3b4368;
+  --muted:#6b7390;
+  --line:#dfe2ec;
+  --bg:#f5f6fa;
+  --card:#ffffff;
+  --brand:#20304f;
+  --accent:#e8590c;
+  --accent-2:#f2a33c;
+  --teal:#0f766e;
+  --soft:#eef0f7;
+  --radius:12px;
+  --radius-sm:8px;
+  --shadow:0 1px 2px rgba(28,35,64,.06),0 8px 24px rgba(28,35,64,.06);
+  --shadow-sm:0 1px 2px rgba(28,35,64,.08);
+  --sp-1:8px;--sp-2:12px;--sp-3:16px;--sp-4:24px;--sp-5:32px;--sp-6:48px;
+  --font:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --fs-12:12px;--fs-13:13px;--fs-14:14px;--fs-15:15px;--fs-16:16px;--fs-18:18px;--fs-22:22px;--fs-28:28px;--fs-34:34px;
+  --topbar-h:38px;
+  --header-h:64px;
+}
+*{box-sizing:border-box}
+html{scroll-padding-top:calc(var(--topbar-h) + var(--header-h) + 12px)}
+body{margin:0;font-family:var(--font);color:var(--ink);background:var(--bg);line-height:1.75;font-size:var(--fs-15);-webkit-text-size-adjust:100%}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+a:hover{color:var(--accent)}
+h1,h2,h3,h4{margin:0;line-height:1.35;font-weight:700}
+p{margin:0 0 14px}
+ul,ol{margin:0 0 14px;padding-left:22px}
+li{margin-bottom:6px}
+button{font-family:inherit;cursor:pointer}
+:focus-visible{outline:3px solid var(--accent-2);outline-offset:2px;border-radius:4px}
+
+/* 吸顶组合 */
+.sticky-wrap{position:sticky;top:0;z-index:50}
+.topbar{height:var(--topbar-h);background:var(--brand);color:#dbe2f0;font-size:var(--fs-13);display:flex;align-items:center}
+.topbar-inner{max-width:1180px;margin:0 auto;padding:0 var(--sp-3);display:flex;gap:14px;align-items:center;width:100%;overflow:hidden;white-space:nowrap}
+.topbar b{color:#fff;font-weight:600}
+.topbar .tb-tag{background:rgba(255,255,255,.14);padding:1px 8px;border-radius:99px;font-size:var(--fs-12)}
+.topbar .tb-sep{opacity:.45}
+.topbar .tb-item{overflow:hidden;text-overflow:ellipsis}
+@media(max-width:640px){.topbar .tb-hide{display:none}}
+
+.header{background:#fff;border-bottom:1px solid var(--line);box-shadow:var(--shadow-sm)}
+.header-inner{max-width:1180px;margin:0 auto;padding:0 var(--sp-3);height:var(--header-h);display:flex;align-items:center;gap:var(--sp-3)}
+.brand{display:flex;align-items:center;gap:10px;flex-shrink:0}
+.brand-mark{width:34px;height:34px;flex-shrink:0}
+.brand-text{font-size:var(--fs-18);font-weight:800;letter-spacing:.5px;color:var(--brand)}
+.nav{display:flex;gap:2px;margin-left:var(--sp-3);flex:1;min-width:0}
+.nav a{padding:8px 11px;font-size:var(--fs-14);color:var(--ink-2);border-radius:var(--radius-sm);white-space:nowrap}
+.nav a:hover{background:var(--soft);color:var(--brand)}
+.head-tools{display:flex;align-items:center;gap:8px;flex-shrink:0}
+.search{display:flex;align-items:center;background:var(--soft);border:1px solid var(--line);border-radius:99px;padding:4px 4px 4px 12px}
+.search input{border:0;background:transparent;font-size:var(--fs-13);width:132px;color:var(--ink);outline:none;padding:4px 0}
+.search button{border:0;background:var(--brand);color:#fff;border-radius:99px;font-size:var(--fs-12);padding:4px 12px}
+.menu-btn{display:none;border:1px solid var(--line);background:#fff;border-radius:var(--radius-sm);padding:8px 10px;color:var(--brand);font-size:var(--fs-13)}
+@media(max-width:900px){
+  .nav{display:none;position:absolute;left:0;right:0;top:calc(var(--topbar-h) + var(--header-h));background:#fff;border-bottom:1px solid var(--line);flex-direction:column;padding:8px 12px 14px;box-shadow:var(--shadow);gap:2px}
+  .nav.open{display:flex}
+  .nav a{padding:10px 12px;font-size:var(--fs-15)}
+  .menu-btn{display:inline-block}
+  .search input{width:100px}
+}
+@media(max-width:400px){.search input{width:70px}.brand-text{font-size:var(--fs-16)}}
+
+/* 首屏 */
+.hero{background:linear-gradient(160deg,#1c2340 0%,#26365c 55%,#31456f 100%);color:#e8edf7;position:relative;overflow:hidden}
+.hero-inner{max-width:1180px;margin:0 auto;padding:var(--sp-6) var(--sp-3) var(--sp-5);display:grid;grid-template-columns:1.15fr .85fr;gap:var(--sp-5);align-items:center}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:var(--fs-13);background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.18);padding:4px 12px;border-radius:99px;color:#ffd9c2;margin-bottom:var(--sp-3)}
+.hero h1{font-size:var(--fs-34);letter-spacing:1px;color:#fff;margin-bottom:var(--sp-3)}
+.hero p.lead{font-size:var(--fs-16);color:#c8d2e6;max-width:560px;margin-bottom:var(--sp-4)}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:var(--sp-4)}
+.btn{display:inline-flex;align-items:center;gap:6px;padding:10px 20px;border-radius:99px;font-size:var(--fs-14);font-weight:600;border:1px solid transparent;transition:transform .18s ease,box-shadow .18s ease}
+.btn-primary{background:var(--accent);color:#fff}
+.btn-primary:hover{color:#fff;transform:translateY(-2px);box-shadow:0 6px 18px rgba(232,89,12,.35)}
+.btn-ghost{background:transparent;color:#dbe4f3;border-color:rgba(255,255,255,.32)}
+.btn-ghost:hover{color:#fff;border-color:#fff;transform:translateY(-2px)}
+.hero-stats{display:flex;gap:var(--sp-5);flex-wrap:wrap}
+.hero-stats div{font-size:var(--fs-12);color:#a7b4cf}
+.hero-stats strong{display:block;font-size:var(--fs-22);color:#ffd166;font-weight:800;line-height:1.2}
+.hero-visual{position:relative;min-height:260px}
+.hero-visual svg{width:100%;height:auto;display:block;filter:drop-shadow(0 14px 30px rgba(0,0,0,.28))}
+@media(max-width:860px){
+  .hero-inner{grid-template-columns:1fr;padding-top:var(--sp-5)}
+  .hero h1{font-size:var(--fs-28)}
+  .hero-visual{min-height:0;max-width:420px;margin:0 auto}
+}
+
+/* 布局 */
+.layout{max-width:1180px;margin:0 auto;padding:var(--sp-5) var(--sp-3) var(--sp-6);display:grid;grid-template-columns:1fr 296px;gap:var(--sp-5);align-items:start}
+.main-col{min-width:0}
+.side-col{min-width:0;display:flex;flex-direction:column;gap:var(--sp-4)}
+@media(max-width:900px){
+  .layout{grid-template-columns:1fr;gap:var(--sp-4)}
+  .side-col{order:2}
+}
+
+.section{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:var(--sp-4);margin-bottom:var(--sp-4);box-shadow:var(--shadow-sm)}
+.section-head{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:var(--sp-3);padding-bottom:var(--sp-2);border-bottom:1px solid var(--line)}
+.section-head h2{font-size:var(--fs-22);color:var(--brand)}
+.section-head .sub{font-size:var(--fs-13);color:var(--muted)}
+.section-head .more{margin-left:auto;font-size:var(--fs-13);color:var(--teal);font-weight:600}
+
+/* 概览 */
+.overview-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--sp-3)}
+.ov-item{border:1px solid var(--line);border-radius:var(--radius-sm);padding:12px 14px;background:#fbfbfe}
+.ov-item h3{font-size:var(--fs-15);margin-bottom:4px;color:var(--ink)}
+.ov-item p{font-size:var(--fs-13);color:var(--muted);margin:0}
+.ov-item .num{font-size:var(--fs-12);color:var(--accent);font-weight:700}
+
+/* 精选卡片 */
+.card-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp-3)}
+@media(max-width:760px){.card-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:480px){.card-grid{grid-template-columns:1fr}}
+.card{border:1px solid var(--line);border-radius:var(--radius-sm);overflow:hidden;background:#fff;display:flex;flex-direction:column;transition:transform .18s ease,box-shadow .18s ease}
+.card:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+.card img{width:100%;height:132px;object-fit:cover}
+.card-body{padding:12px 14px 14px}
+.card-body h3{font-size:var(--fs-15);margin-bottom:6px}
+.card-body p{font-size:var(--fs-13);color:var(--muted);margin:0 0 8px}
+.meta{font-size:var(--fs-12);color:#8b93ab;display:flex;gap:8px;flex-wrap:wrap}
+.badge{display:inline-block;font-size:var(--fs-12);padding:1px 8px;border-radius:99px;background:var(--soft);color:var(--ink-2)}
+.badge-hot{background:#fdece2;color:var(--accent)}
+.badge-new{background:#e3f3f1;color:var(--teal)}
+
+/* 紧凑列表 */
+.list{list-style:none;padding:0;margin:0}
+.list li{display:flex;gap:12px;padding:11px 0;border-bottom:1px dashed var(--line);font-size:var(--fs-14)}
+.list li:last-child{border-bottom:0}
+.list .li-time{font-size:var(--fs-12);color:var(--muted);flex-shrink:0;width:74px;padding-top:2px}
+.list .li-title{font-weight:600;color:var(--ink)}
+.list .li-desc{display:block;font-size:var(--fs-13);color:var(--muted);font-weight:400;margin-top:2px}
+
+/* 标签索引 */
+.tag-cloud{display:flex;flex-wrap:wrap;gap:8px}
+.tag-cloud a{font-size:var(--fs-13);padding:6px 13px;border:1px solid var(--line);border-radius:99px;background:#fbfbfe;color:var(--ink-2)}
+.tag-cloud a:hover{border-color:var(--accent);color:var(--accent);background:#fff5ee}
+
+/* 深度解析 */
+.deep{background:#fdfcfa;border-left:4px solid var(--accent)}
+.deep h2{font-size:var(--fs-22)}
+.deep h3{font-size:var(--fs-17);margin:var(--sp-4) 0 var(--sp-1);color:var(--brand);padding-left:12px;border-left:3px solid var(--accent-2)}
+.deep h3:first-of-type{margin-top:var(--sp-2)}
+.deep p{font-size:var(--fs-15)}
+.deep .lead-para{font-size:var(--fs-16);color:var(--ink-2)}
+.fact-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:14px 0}
+@media(max-width:600px){.fact-grid{grid-template-columns:1fr}}
+.fact-box{border:1px solid var(--line);border-radius:var(--radius-sm);padding:12px 14px;background:#fff}
+.fact-box h4{font-size:var(--fs-13);color:var(--muted);font-weight:600;margin-bottom:6px;letter-spacing:.5px}
+.fact-box p{font-size:var(--fs-14);margin:0}
+.fact-box .hl{color:var(--accent);font-weight:700}
+.quote{background:#fff;border:1px solid var(--line);border-left:4px solid var(--teal);border-radius:var(--radius-sm);padding:12px 16px;margin:14px 0;font-size:var(--fs-14);color:var(--ink-2)}
+.quote cite{display:block;font-style:normal;font-size:var(--fs-12);color:var(--muted);margin-top:6px}
+
+/* 步骤 */
+.steps{counter-reset:step;list-style:none;padding:0;margin:0}
+.steps li{position:relative;padding-left:44px;margin-bottom:16px}
+.steps li::before{counter-increment:step;content:counter(step);position:absolute;left:0;top:0;width:28px;height:28px;border-radius:50%;background:var(--brand);color:#fff;font-size:var(--fs-13);font-weight:700;display:flex;align-items:center;justify-content:center}
+.steps li strong{display:block;font-size:var(--fs-15);margin-bottom:2px}
+.steps li span{font-size:var(--fs-13);color:var(--muted)}
+
+/* 对照面板 */
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:12px 0}
+@media(max-width:600px){.compare{grid-template-columns:1fr}}
+.compare-col{border:1px solid var(--line);border-radius:var(--radius-sm);padding:14px}
+.compare-col h4{font-size:var(--fs-14);margin-bottom:8px}
+.compare-col.a{background:#fdf3ec;border-color:#f6d5c1}
+.compare-col.b{background:#eef6f5;border-color:#c7e4e0}
+.compare-col ul{margin:0;padding-left:18px;font-size:var(--fs-13);color:var(--ink-2)}
+
+/* FAQ */
+details{border:1px solid var(--line);border-radius:var(--radius-sm);padding:0;margin-bottom:10px;background:#fff}
+details summary{cursor:pointer;padding:12px 16px;font-weight:600;font-size:var(--fs-14);list-style:none;display:flex;align-items:center;justify-content:space-between;gap:10px}
+details summary::-webkit-details-marker{display:none}
+details summary::after{content:"+";font-size:18px;color:var(--accent);font-weight:400}
+details[open] summary::after{content:"–"}
+details .d-body{padding:0 16px 14px;font-size:var(--fs-14);color:var(--ink-2)}
+
+/* 评论 */
+.comment{display:flex;gap:12px;padding:14px 0;border-bottom:1px solid var(--line)}
+.comment:last-child{border-bottom:0}
+.avatar{width:38px;height:38px;border-radius:50%;background:var(--soft);color:var(--brand);font-size:var(--fs-14);font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.comment-body{flex:1;min-width:0}
+.comment-body .c-head{font-size:var(--fs-13);color:var(--muted);margin-bottom:2px}
+.comment-body .c-head b{color:var(--ink);font-size:var(--fs-14)}
+.comment-body p{font-size:var(--fs-14);margin:4px 0 0}
+.comment .reply{font-size:var(--fs-13);background:var(--soft);border-radius:var(--radius-sm);padding:8px 12px;margin-top:8px;color:var(--ink-2)}
+
+/* 时间线 */
+.timeline{list-style:none;padding:0;margin:0;position:relative}
+.timeline li{position:relative;padding-left:26px;padding-bottom:16px;border-left:2px solid var(--line);margin-left:6px}
+.timeline li:last-child{border-left-color:transparent;padding-bottom:0}
+.timeline li::before{content:"";position:absolute;left:-7px;top:4px;width:12px;height:12px;border-radius:50%;background:var(--accent-2);border:2px solid #fff;box-shadow:0 0 0 2px var(--line)}
+.timeline .t-date{font-size:var(--fs-12);color:var(--accent);font-weight:700}
+.timeline .t-title{font-size:var(--fs-14);font-weight:600;margin:1px 0 2px}
+.timeline .t-desc{font-size:var(--fs-13);color:var(--muted)}
+
+/* 相关推荐 */
+.rec-tags{display:flex;flex-wrap:wrap;gap:8px}
+.rec-tags a{font-size:var(--fs-13);padding:5px 12px;border-radius:var(--radius-sm);background:#f4f1fb;color:#4b3a86;border:1px solid #e2daf5}
+.rec-tags a:hover{background:#ece6fb}
+
+/* 侧栏 */
+.side-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:var(--sp-3);box-shadow:var(--shadow-sm)}
+.side-card h3{font-size:var(--fs-15);margin-bottom:10px;color:var(--brand);display:flex;align-items:center;gap:6px}
+.side-card h3::before{content:"";width:4px;height:14px;border-radius:2px;background:var(--accent)}
+.side-list{list-style:none;padding:0;margin:0}
+.side-list li{padding:8px 0;border-bottom:1px dashed var(--line);font-size:var(--fs-13)}
+.side-list li:last-child{border-bottom:0}
+.side-list a{display:flex;gap:8px;align-items:flex-start}
+.side-list .rank{font-weight:800;font-size:var(--fs-13);color:var(--muted);width:18px;flex-shrink:0}
+.side-list li:nth-child(-n+3) .rank{color:var(--accent)}
+.side-nav a{display:block;font-size:var(--fs-13);padding:6px 10px;border-radius:var(--radius-sm);color:var(--ink-2)}
+.side-nav a:hover{background:var(--soft)}
+.side-nav a.active{background:var(--soft);color:var(--brand);font-weight:600;box-shadow:inset 3px 0 0 var(--accent)}
+.notice-box{font-size:var(--fs-13);color:var(--muted)}
+.notice-box strong{color:var(--ink)}
+
+/* 页脚 */
+.footer{background:#161c2e;color:#aeb8cd;margin-top:var(--sp-4)}
+.footer-inner{max-width:1180px;margin:0 auto;padding:var(--sp-5) var(--sp-3) var(--sp-4)}
+.footer-top{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:var(--sp-4);padding-bottom:var(--sp-4);border-bottom:1px solid rgba(255,255,255,.1)}
+@media(max-width:800px){.footer-top{grid-template-columns:1fr 1fr}}
+@media(max-width:480px){.footer-top{grid-template-columns:1fr}}
+.footer .f-brand{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.footer .f-brand .brand-text{color:#fff}
+.footer .f-brand svg{width:30px;height:30px}
+.footer p{font-size:var(--fs-13);color:#8b96ad}
+.footer h4{color:#dde4f0;font-size:var(--fs-14);margin-bottom:10px}
+.footer ul{list-style:none;padding:0;margin:0}
+.footer li{margin-bottom:6px}
+.footer li a{font-size:var(--fs-13);color:#aeb8cd}
+.footer li a:hover{color:#fff}
+.footer-bottom{padding-top:var(--sp-3);font-size:var(--fs-12);color:#7a859c;display:flex;flex-wrap:wrap;gap:8px 20px;justify-content:space-between}
+.disclaimer{font-size:var(--fs-12);color:#7a859c;margin-top:10px;line-height:1.7}
+
+/* 搜索反馈 */
+.search-feedback{display:none;font-size:var(--fs-13);color:var(--accent);margin-top:8px}
+.search-feedback.show{display:block}
+
+/* 回到顶部 */
+#toTop{position:fixed;right:20px;bottom:24px;width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:#fff;color:var(--brand);box-shadow:var(--shadow);display:none;align-items:center;justify-content:center;font-size:18px;z-index:60}
+#toTop.show{display:flex}
+#toTop:hover{color:var(--accent);border-color:var(--accent)}
+@media(max-width:480px){#toTop{right:12px;bottom:16px;width:40px;height:40px}}
+
+/* 交互高亮 */
+mark{background:#ffe7a8;color:inherit;padding:0 1px;border-radius:2px}
+.hide{display:none!important}
+
+@media (prefers-reduced-motion: reduce){
+  *{scroll-behavior:auto!important;transition:none!important;animation:none!important}
+  .card:hover,.btn:hover{transform:none!important}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="sticky-wrap">
+  <div class="topbar" role="region" aria-label="站点公告">
+    <div class="topbar-inner">
+      <span class="tb-tag">更新</span>
+      <b>极品反差爆料</b>
+      <span class="tb-sep">|</span>
+      <span class="tb-item">11月7日 22:40 新增「健身房私教宣传照与会员实拍对比」条目</span>
+      <span class="tb-sep tb-hide">|</span>
+      <span class="tb-hide">11月6日 上线「官方通报 vs 当事人回应」时间线第 3 版</span>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="header-inner">
+      <a class="brand" href="/#top" aria-label="极品反差爆料首页">
+        <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+          <rect width="64" height="64" rx="14" fill="#20304f"/>
+          <circle cx="24" cy="24" r="10" fill="#ff8f5a"/>
+          <circle cx="40" cy="40" r="10" fill="#ffd166"/>
+          <path d="M24 34v12h12" stroke="#fff" stroke-width="4" fill="none" stroke-linecap="round"/>
+        </svg>
+        <span class="brand-text">极品反差爆料</span>
+      </a>
+
+      <nav class="nav" id="siteNav" aria-label="主题导航">
+        <a href="/#overview">领域概览</a>
+        <a href="/#picks">精选推荐</a>
+        <a href="/#latest">最新更新</a>
+        <a href="/#channels">分类入口</a>
+        <a href="/#deep">深度解析</a>
+        <a href="/#guide">体验指南</a>
+        <a href="/#faq">常见问答</a>
+        <a href="/#comments">读者评论</a>
+        <a href="/#news">相关资讯</a>
+      </nav>
+
+      <div class="head-tools">
+        <form class="search" role="search" id="searchForm" onsubmit="return false;">
+          <input type="search" id="searchInput" placeholder="搜条目/人物/平台" aria-label="站内查找" autocomplete="off">
+          <button type="submit" id="searchBtn">查找</button>
+        </form>
+        <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="siteNav">菜单</button>
+      </div>
+    </div>
+  </header>
+</div>
+
+<section class="hero" id="top">
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <span class="hero-eyebrow">反差案例 · 事实核查 · 时间线追踪</span>
+      <h1>极品反差爆料</h1>
+      <p class="lead">把“人设与事实落差”拆成可核对的三层：平台原文、官方通报、当事方回应。这里记录案例的日期、账号、措辞变化，也保留对不上的地方。</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="/#deep">看本期深度解析</a>
+        <a class="btn btn-ghost" href="/#latest">浏览最新条目</a>
+      </div>
+      <div class="hero-stats">
+        <div><strong>128</strong>在库条目</div>
+        <div><strong>37</strong>附官方通报</div>
+        <div><strong>11-08</strong>数据整理日</div>
+        <div><strong>6</strong>频道分类</div>
+      </div>
+    </div>
+    <div class="hero-visual" aria-hidden="true">
+      <svg viewBox="0 0 420 300" role="img">
+        <defs>
+          <linearGradient id="hg1" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#ffd166"/>
+            <stop offset="1" stop-color="#ff8f5a"/>
+          </linearGradient>
+          <linearGradient id="hg2" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#7fd3c8"/>
+            <stop offset="1" stop-color="#3f8f87"/>
+          </linearGradient>
+        </defs>
+        <rect x="14" y="24" width="250" height="150" rx="12" fill="url(#hg1)" opacity=".9"/>
+        <rect x="140" y="120" width="266" height="150" rx="12" fill="url(#hg2)" opacity=".85"/>
+        <rect x="36" y="46" width="120" height="10" rx="5" fill="#20304f" opacity=".55"/>
+        <rect x="36" y="66" width="180" height="8" rx="4" fill="#20304f" opacity=".3"/>
+        <rect x="36" y="82" width="150" height="8" rx="4" fill="#20304f" opacity=".3"/>
+        <circle cx="286" cy="86" r="34" fill="#fff" opacity=".28"/>
+        <path d="M268 86l12 12 22-24" stroke="#fff" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="162" y="146" width="140" height="9" rx="4" fill="#fff" opacity=".78"/>
+        <rect x="162" y="166" width="200" height="8" rx="4" fill="#fff" opacity=".5"/>
+        <rect x="162" y="184" width="170" height="8" rx="4" fill="#fff" opacity=".5"/>
+        <rect x="162" y="208" width="90" height="26" rx="13" fill="#20304f" opacity=".55"/>
+        <path d="M330 250l14 18 14-18" stroke="#fff" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity=".7"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<div class="layout">
+  <main class="main-col">
+
+    <section class="section" id="overview">
+      <div class="section-head">
+        <h2>领域概览：反差案例怎么分类</h2>
+        <span class="sub">按证据链完整度分四档</span>
+      </div>
+      <div class="overview-grid">
+        <div class="ov-item">
+          <h3><span class="num">01</span> 图文自述型</h3>
+          <p>当事人先在微博、小红书发布“人设图文”，随后被网友用同场景实拍或消费记录对照。证据以截图为主，核查点在原帖发布时间与编辑记录。</p>
+        </div>
+        <div class="ov-item">
+          <h3><span class="num">02</span> 商家宣传型</h3>
+          <p>健身房、医美、民宿的“效果图”与到店实拍差距。通常有平台订单号、门店评价截图，能对到具体日期和班次。</p>
+        </div>
+        <div class="ov-item">
+          <h3><span class="num">03</span> 官方通报型</h3>
+          <p>由市场监管、公安、平台治理账号发布通报，与早期爆料内容有明确出入。此类信息层级最高，但通报措辞常被二次转述变形。</p>
+        </div>
+        <div class="ov-item">
+          <h3><span class="num">04</span> 身份冒用型</h3>
+          <p>账号冒用教师、医生、工程师等身份发布内容。核查靠实名认证信息、单位回应、平台处置公告，周期通常长于前三种。</p>
+        </div>
+      </div>
+      <p style="margin-top:14px;font-size:var(--fs-14);color:var(--muted)">四档之间并非固定，11月5日入库的「某民宿无边泳池宣传图」条目，最初按商家宣传型收录，因店主出示删改前后版本，改判为图文自述型。</p>
+    </section>
+
+    <section class="section" id="picks">
+      <div class="section-head">
+        <h2>精选内容推荐</h2>
+        <span class="sub">核查线索较完整的 6 条</span>
+        <a class="more" href="/#latest">全部更新 →</a>
+      </div>
+      <div class="card-grid">
+        <article class="card">
+          <img src="https://picsum.photos/seed/reverse-gym-01/400/240" width="400" height="240" loading="lazy" alt="健身房私教宣传照与会员实拍对照拼图">
+          <div class="card-body">
+            <span class="badge badge-hot">核查中</span>
+            <h3>健身房私教宣传照与会员实拍对比</h3>
+            <p>门店大众点评页面的“教练团队”照片，与11月7日会员拍摄的器械区实拍存在明显构图差异。</p>
+            <div class="meta"><span>11-07 22:40</span><span>门店：劲跃健身·望京店</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <img src="https://picsum.photos/seed/reverse-hotel-02/400/240" width="400" height="240" loading="lazy" alt="民宿无边泳池宣传图与雨天实景对比">
+          <div class="card-body">
+            <span class="badge badge-new">已澄清</span>
+            <h3>民宿无边泳池宣传图与雨天实景</h3>
+            <p>小红书博主“阿栗在路上”11月5日晒出订单与实拍，店主同日在评论区出示拍摄参数反驳。</p>
+            <div class="meta"><span>11-05 18:10</span><span>平台：小红书</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <img src="https://picsum.photos/seed/reverse-food-03/400/240" width="400" height="240" loading="lazy" alt="网红餐厅菜品宣传图与出餐实拍对照">
+          <div class="card-body">
+            <h3>网红餐厅菜品宣传图与出餐实拍</h3>
+            <p>美团页面“招牌蟹面”图片与11月3日到店食客拍摄的份量差异，商家回应称属摆盘拍摄。</p>
+            <div class="meta"><span>11-03 12:25</span><span>平台：美团</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <img src="https://picsum.photos/seed/reverse-id-04/400/240" width="400" height="240" loading="lazy" alt="自称三甲医院医生账号的认证信息截图">
+          <div class="card-body">
+            <span class="badge">待通报</span>
+            <h3>自称三甲医院医生的账号认证核查</h3>
+            <p>抖音账号“周医生聊皮肤”显示的医院名称，与该院11月2日官网公示的在职名单未对上。</p>
+            <div class="meta"><span>11-02 09:30</span><span>平台：抖音</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <img src="https://picsum.photos/seed/reverse-study-05/400/240" width="400" height="240" loading="lazy" alt="考研经验帖中晒出的录取通知书局部打码">
+          <div class="card-body">
+            <h3>考研经验帖的录取通知书疑点</h3>
+            <p>帖内通知书编号与院校研究生院11月1日公布的拟录取名单编号规则不一致，发帖人已删帖。</p>
+            <div class="meta"><span>11-01 20:15</span><span>平台：知乎</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <img src="https://picsum.photos/seed/reverse-charity-06/400/240" width="400" height="240" loading="lazy" alt="公益直播间的捐赠物资堆放现场照片">
+          <div class="card-body">
+            <span class="badge badge-new">有出入</span>
+            <h3>公益直播间物资去向说明</h3>
+            <p>主播9月30日直播中称“已全部送达”，受赠学校11月6日回应收到的批次与公示清单有三处不同。</p>
+            <div class="meta"><span>11-06 15:50</span><span>平台：快手</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="latest">
+      <div class="section-head">
+        <h2>最新更新</h2>
+        <span class="sub">按入库时间倒序</span>
+      </div>
+      <ul class="list">
+        <li>
+          <span class="li-time">11-08</span>
+          <span><a class="li-title" href="/#deep">「官方通报与当事人回应」时间线更新第 3 版</a><span class="li-desc">补充11月7日21:15 市场监管账号发布的核查说明，并标注两处措辞差异。</span></span>
+        </li>
+        <li>
+          <span class="li-time">11-08</span>
+          <span><a class="li-title" href="/#picks">新增「宠物店寄养环境实拍」条目</a><span class="li-desc">平台页面展示的独立寄养间，与11月6日探访视频中的笼位数量不一致。</span></span>
+        </li>
+        <li>
+          <span class="li-time">11-07</span>
+          <span><a class="li-title" href="/#picks">健身房私教宣传照对比条目入库</a><span class="li-desc">附门店点评页截屏6张、会员实拍4张，拍摄时间跨度10月28日至11月7日。</span></span>
+        </li>
+        <li>
+          <span class="li-time">11-06</span>
+          <span><a class="li-title" href="/#news">公益直播间物资去向说明更新</a><span class="li-desc">受赠学校回应原文已存档，编号 QX-2026-1106-02。</span></span>
+        </li>
+        <li>
+          <span class="li-time">11-05</span>
+          <span><a class="li-title" href="/#picks">民宿泳池条目改判为图文自述型</a><span class="li-desc">因店主出示原图 EXIF 信息，证据层从“商家宣传”调整为“拍摄参数争议”。</span></span>
+        </li>
+        <li>
+          <span class="li-time">11-03</span>
+          <span><a class="li-title" href="/#channels">餐饮类频道增加“出餐实拍”标签</a><span class="li-desc">同步收录 14 条餐厅宣传图与出餐实拍对照，覆盖 6 个城市。</span></span>
+        </li>
+      </ul>
+    </section>
+
+    <section class="section" id="channels">
+      <div class="section-head">
+        <h2>分类入口</h2>
+        <span class="sub">按反差发生的场景划分</span>
+      </div>
+      <div class="tag-cloud">
+        <a href="/#picks">健身房私教宣传照</a>
+        <a href="/#picks">民宿泳池宣传图</a>
+        <a href="/#picks">餐厅菜品出餐实拍</a>
+        <a href="/#picks">医生账号身份认证</a>
+        <a href="/#deep">官方通报措辞差异</a>
+        <a href="/#picks">录取通知书编号核查</a>
+        <a href="/#news">公益直播物资去向</a>
+        <a href="/#picks">宠物店寄养环境</a>
+        <a href="/#guide">人设图文发布时间线</a>
+        <a href="/#deep">删帖与编辑记录追踪</a>
+      </div>
+    </section>
+
+    <section class="section deep" id="deep">
+      <div class="section-head">
+        <h2>深度解析：反差能不能只用一张对比图定案</h2>
+        <span class="sub">唯一主体阅读区</span>
+      </div>
+      <p class="lead-para">先说判断：单张对比图不足以支撑“造假”结论，能定案的往往是时间线、原始参数、第三方回应三者的交叉。以11月5日民宿泳池条目为例，仅凭“宣传图很蓝、实拍很浑”无法区分雨天、滤镜还是修图，直到店主出示拍摄参数、平台显示发布设备，才有了可讨论的落点。</p>
+
+      <h3>一、案例时间线：三天内三次信息翻转</h3>
+      <div class="fact-grid">
+        <div class="fact-box">
+          <h4>事实：订单与发布时间</h4>
+          <p>小红书博主“阿栗在路上”11月5日18:10发帖，附订单号尾号<span class="hl">7731</span>，入住日期10月31日。帖子配图3张，均未标注拍摄设备。</p>
+        </div>
+        <div class="fact-box">
+          <h4>回应：店主给出的参数</h4>
+          <p>11月5日23:40，店主在评论区贴出原图属性，显示拍摄于10月30日15:02，光圈 f/8，ISO 100，未显示滤镜应用记录。</p>
+        </div>
+        <div class="fact-box">
+          <h4>转述：二次传播中的变形</h4>
+          <p>11月6日，某短视频账号转述为“店主承认图片经过处理”，原评论区并无此句。该条转述播放量6.2万，评论174条。</p>
+        </div>
+        <div class="fact-box">
+          <h4>推测：尚不能确认的部分</h4>
+          <p>拍摄参数可证明设备与时间，不能证明是否使用第三方修图软件。若要闭环，还需平台后台的发布原图比对，目前未获得。</p>
+        </div>
+      </div>
+
+      <h3>二、数据对比：三条同类条目的证据完整度</h3>
+      <p>把“可核对程度”拆成四个维度打分（每项0—2分），能看出反差爆料之间差别很大。健身房条目得7分，民宿条目得5分，公益直播条目得4分。</p>
+      <div class="compare">
+        <div class="compare-col a">
+          <h4>健身房条目（7/8）</h4>
+          <ul>
+            <li>平台页面截屏：2分（含页码与时间戳）</li>
+            <li>现场实拍：2分（4张，含器械编号）</li>
+            <li>当事方回应：2分（门店客服文字回复）</li>
+            <li>第三方通报：1分（商圈物业口头说明）</li>
+          </ul>
+        </div>
+        <div class="compare-col b">
+          <h4>公益直播条目（4/8）</h4>
+          <ul>
+            <li>平台页面截屏：1分（仅直播回放片段）</li>
+            <li>现场实拍：1分（学校单方拍摄）</li>
+            <li>当事方回应：1分（主播助理语音转述）</li>
+            <li>第三方通报：1分（未出具书面材料）</li>
+          </ul>
+        </div>
+      </div>
+      <p>同一套打分下，健身房条目的“现场实拍”能对到器械编号与照片时间，公益直播条目只有一段回放和一段语音。证据完整度差异直接决定条目在列表中的呈现顺序，不是按热度排。</p>
+
+      <h3>三、说法差异：通报原文与转述之间</h3>
+      <p>11月7日21:15，市场监管账号就某餐饮门店的宣传图问题发布说明，原文写的是“图片与实物存在差异，已责令整改”，并未使用“虚假宣传”四字。11月8日上午，两个本地生活号转述为“被认定虚假宣传”。前者是行政措辞，后者是定性措辞，中间差了一个处罚决定书。</p>
+      <div class="quote">
+        “图片与实物存在差异，已责令整改；是否构成虚假宣传，需结合订单页面完整表述判断。”
+        <cite>—— 某市场监管账号 11月7日 21:15 说明原文（节选）</cite>
+      </div>
+      <p>这类差异在库里出现频率不低。转述者往往省略“需结合……判断”的条件句，留下最抓人的半句。核对方法很笨：找到原始发布账号，看发布时间、看是否置顶、看评论区是否有补充。三步做完，多数“惊天定性”会退回它本来的层级。</p>
+
+      <h3>四、规则前后变化：平台处置口径的一年对比</h3>
+      <p>2025年10月，同类账号冒用身份的处理多为“删除内容+限流7天”；2026年10月的平台治理公告里，改为“删除内容+封禁直播权限30天+公示账号主体”。口径变化影响条目写法：过去只能记录“内容已删”，现在可以记录公示期与账号主体类型。</p>
+      <p>反过来，个人博主发布的对比图文不受同一套处置规则约束，更多依赖侵权投诉与协商删除。这解释了为什么民宿条目最后停在“参数争议”，没有进入平台处置流程——它压根不在那条处置线上。</p>
+
+      <h3>五、可核对的结构：把判断拆成四列</h3>
+      <p>下面这四列是本页处理每条反差案例的固定格式，任何一条都可以按列追溯。判断只在第四列出现，且必须写清依据哪一列的前三列内容。</p>
+      <div class="fact-grid">
+        <div class="fact-box"><h4>① 原始发布</h4><p>账号、平台、发布时间、编辑记录。缺失则标“未见原帖”。</p></div>
+        <div class="fact-box"><h4>② 对照材料</h4><p>实拍、订单、参数、名单。每份材料标注获取时间与来源方。</p></div>
+        <div class="fact-box"><h4>③ 当事方回应</h4><p>区分书面、语音、转述三种形态，转述单独标出。</p></div>
+        <div class="fact-box"><h4>④ 判断与保留意见</h4><p>写明结论强度：可确认、存疑、待通报，并列出缺口。</p></div>
+      </div>
+      <p>以健身房条目为例，①②③齐备，④写“可确认宣传照与实拍构图不一致；不能确认是否经过换脸或合成”。这个表述比“翻车”或“造假”都更笨，但它能被反驳，也能被复核。</p>
+    </section>
+
+    <section class="section" id="guide">
+      <div class="section-head">
+        <h2>体验指南：五步核对一条反差爆料</h2>
+        <span class="sub">适用于普通读者</span>
+      </div>
+      <ol class="steps">
+        <li><strong>先找原帖，不找截图</strong><span>截图会丢时间戳和编辑记录。在平台内搜账号名，看主页是否有原帖，发布时间是否与截图一致。</span></li>
+        <li><strong>确认对照材料的获取时间</strong><span>实拍照片的属性、订单页的截图时间，都要晚于或接近原帖时间，否则对照关系不成立。</span></li>
+        <li><strong>把回应分成书面和转述</strong><span>客服文字回复、官方公告算书面；语音转述、第三方转述单独记，权重低一档。</span></li>
+        <li><strong>看有没有第三方通报</strong><span>市场监管、公安、平台治理账号的通报优先级最高，但要注意原文措辞与转述的区别。</span></li>
+        <li><strong>写下保留意见</strong><span>每条结论后面留一句“尚不能确认……”，把缺口写出来，避免把推测当事实传播。</span></li>
+      </ol>
+      <p style="font-size:var(--fs-13);color:var(--muted)">这套流程在11月6日的公益直播条目上跑过一遍，从找原帖到写下保留意见约25分钟，最后停在“待通报”，没有急着定性。</p>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="section-head">
+        <h2>常见问答</h2>
+        <span class="sub">读者问得最多的 6 个问题</span>
+      </div>
+      <details>
+        <summary>宣传图与实拍差距多大才算“反差”？</summary>
+        <div class="d-body">没有统一阈值。看差异是否改变消费者判断：份量、面积、可用性、安全条件属于关键项；色调、光线属于表现项。餐厅菜品份量差三分之一，多数平台会认定为图文不符；整体偏色但份量一致，通常只作提示。</div>
+      </details>
+      <details>
+        <summary>官方通报里“责令整改”和“虚假宣传”差在哪？</summary>
+        <div class="d-body">前者是行政措施，后者是需要处罚决定书支撑的定性。11月7日的餐饮门店说明只写到“存在差异，已责令整改”，未使用“虚假宣传”。转述时加上定性词，属于超出原文范围的表述。</div>
+      </details>
+      <details>
+        <summary>当事人删帖之后，条目还会保留吗？</summary>
+        <div class="d-body">保留，但会标注“原帖已删除”与删除时间。删帖本身也是时间线上的一环，比如考研经验帖条目在11月1日20:15后被删除，条目里记录了发帖与删帖的时间差。</div>
+      </details>
+      <details>
+        <summary>为什么有的条目写“待通报”，不直接给结论？</summary>
+        <div class="d-body">因为手头只有单方材料。医生账号认证核查那条，只有账号页面截图与医院官网名单，缺平台认证后台信息，结论强度只能到“存疑”。写“待通报”是留出补证空间。</div>
+      </details>
+      <details>
+        <summary>平台订单截图能当作对照材料吗？</summary>
+        <div class="d-body">能，但要满足两个条件：截图含订单号尾号与下单时间；截图时间与入住或消费时间对得上。民宿条目里的订单尾号7731与入住日期10月31日，就是靠这两项完成对照。</div>
+      </details>
+      <details>
+        <summary>普通人遇到图文不符，最有效的做法是什么？</summary>
+        <div class="d-body">先保留订单页与现场实拍的原图，不要只截屏幕。然后在平台内发起“图文不符”投诉，附订单号与照片属性。多数平台的处理时限是3—7个工作日，比发帖曝光更容易拿到退款或整改反馈。</div>
+      </details>
+    </section>
+
+    <section class="section" id="comments">
+      <div class="section-head">
+        <h2>读者评论</h2>
+        <span class="sub">来自条目留言与读者来信</span>
+      </div>
+      <div class="comment">
+        <div class="avatar">林</div>
+        <div class="comment-body">
+          <div class="c-head"><b>林间小满</b> · 11-08 09:12 · 对「健身房私教宣传照」条目</div>
+          <p>我去过望京那家店，器械区确实比页面图小一圈，但教练本人和照片差别不大。问题可能出在广角镜头，不是换人。</p>
+        </div>
+      </div>
+      <div class="comment">
+        <div class="avatar">陈</div>
+        <div class="comment-body">
+          <div class="c-head"><b>陈默不默</b> · 11-07 23:44 · 对「民宿泳池」条目</div>
+          <p>参数能证明没修图吗？f/8、ISO 100 只能说明曝光正常，蓝色饱和完全可以后期拉。店主的回应避开了这个问题。</p>
+          <div class="reply">回复：条目里也写了这一点，拍摄参数不能证明是否用第三方软件修图，目前列为缺口。</div>
+        </div>
+      </div>
+      <div class="comment">
+        <div class="avatar">赵</div>
+        <div class="comment-body">
+          <div class="c-head"><b>赵四喜的猫</b> · 11-07 19:05</div>
+          <p>这类内容看多了有点累。真正有用的是那份四列核对表，我照着查了一条本地餐厅的团购页，发现宣传图是两年前的。</p>
+        </div>
+      </div>
+      <div class="comment">
+        <div class="avatar">吴</div>
+        <div class="comment-body">
+          <div class="c-head"><b>吴钩霜雪明</b> · 11-06 21:30 · 对「公益直播物资」条目</div>
+          <p>学校回应的清单编号 QX-2026-1106-02 我核对过，确实能对上批次，但数量差了三箱矿泉水。这个细节比“全部送达”更值得追。</p>
+        </div>
+      </div>
+      <div class="comment">
+        <div class="avatar">周</div>
+        <div class="comment-body">
+          <div class="c-head"><b>周周不上班</b> · 11-06 10:18 · 对「医生账号认证」条目</div>
+          <p>官网名单没找到不等于不在职，进修医生和返聘专家常常不公示。这条证据链太薄，别急着下结论。</p>
+        </div>
+      </div>
+      <div class="comment">
+        <div class="avatar">何</div>
+        <div class="comment-body">
+          <div class="c-head"><b>何须浅碧</b> · 11-05 22:50</div>
+          <p>对比图那一段写得挺克制，没有用“翻车”“实锤”这种词。不过标题“极品反差爆料”还是有点抓眼球，内容倒是冷静的。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="news">
+      <div class="section-head">
+        <h2>相关资讯</h2>
+        <span class="sub">平台规则与治理公告</span>
+      </div>
+      <ul class="list">
+        <li><span class="li-time">11-07</span><span><a class="li-title" href="/#deep">市场监管账号发布餐饮门店宣传图核查说明</a><span class="li-desc">原文使用“存在差异，已责令整改”，未作虚假宣传定性。</span></span></li>
+        <li><span class="li-time">11-06</span><span><a class="li-title" href="/#picks">受赠学校回应公益直播物资批次</a><span class="li-desc">回应文件编号 QX-2026-1106-02，列出三处与公示清单的差异。</span></span></li>
+        <li><span class="li-time">11-04</span><span><a class="li-title" href="/#guide">平台治理公告调整账号冒用处置口径</a><span class="li-desc">封禁直播权限由7天延长至30天，并增加账号主体公示。</span></span></li>
+        <li><span class="li-time">10-30</span><span><a class="li-title" href="/#channels">本地生活频道上线“出餐实拍”标签</a><span class="li-desc">首批收录14条餐厅对照记录，覆盖6个城市。</span></span></li>
+      </ul>
+    </section>
+
+    <section class="section" id="ranking">
+      <div class="section-head">
+        <h2>本周核查时间线</h2>
+        <span class="sub">10月28日—11月8日</span>
+      </div>
+      <ol class="timeline">
+        <li>
+          <div class="t-date">11-07 22:40</div>
+          <div class="t-title">健身房宣传照条目入库</div>
+          <div class="t-desc">附门店点评页截屏6张，会员实拍4张。</div>
+        </li>
+        <li>
+          <div class="t-date">11-06 15:50</div>
+          <div class="t-title">公益直播物资说明更新</div>
+          <div class="t-desc">学校回应对上批次编号，数量差三箱矿泉水。</div>
+        </li>
+        <li>
+          <div class="t-date">11-05 23:40</div>
+          <div class="t-title">民宿店主评论区出示原图参数</div>
+          <div class="t-desc">拍摄时间10月30日15:02，光圈 f/8。</div>
+        </li>
+        <li>
+          <div class="t-date">11-02 09:30</div>
+          <div class="t-title">医生账号认证核查启动</div>
+          <div class="t-desc">对照医院官网11月2日公示在职名单。</div>
+        </li>
+        <li>
+          <div class="t-date">10-30 14:00</div>
+          <div class="t-title">“出餐实拍”标签上线</div>
+          <div class="t-desc">首批14条餐饮对照记录进入频道。</div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="section" id="rec">
+      <div class="section-head">
+        <h2>相关推荐</h2>
+        <span class="sub">按主题延伸</span>
+      </div>
+      <div class="rec-tags">
+        <a href="/#picks">健身房私教宣传照对比</a>
+        <a href="/#picks">民宿无边泳池实拍</a>
+        <a href="/#deep">官方通报措辞差异</a>
+        <a href="/#guide">人设图文时间线核查</a>
+        <a href="/#picks">录取通知书编号核对</a>
+        <a href="/#news">公益直播物资批次</a>
+        <a href="/#faq">图文不符投诉流程</a>
+        <a href="/#picks">宠物店寄养环境探访</a>
+        <a href="/#deep">四列核对表使用说明</a>
+      </div>
+    </section>
+
+  </main>
+
+  <aside class="side-col" aria-label="侧栏">
+    <nav class="side-card side-nav" id="sideNav" aria-label="栏目快捷导航">
+      <h3>栏目导航</h3>
+      <a href="/#overview">领域概览</a>
+      <a href="/#picks">精选内容推荐</a>
+      <a href="/#latest">最新更新</a>
+      <a href="/#channels">分类入口</a>
+      <a href="/#deep">深度解析</a>
+      <a href="/#guide">体验指南</a>
+      <a href="/#faq">常见问答</a>
+      <a href="/#comments">读者评论</a>
+      <a href="/#news">相关资讯</a>
+      <a href="/#ranking">核查时间线</a>
+      <a href="/#rec">相关推荐</a>
+    </nav>
+
+    <div class="side-card">
+      <h3>本周阅读榜</h3>
+      <ol class="side-list">
+        <li><span class="rank">1</span><a href="/#picks">健身房私教宣传照与会员实拍对比</a></li>
+        <li><span class="rank">2</span><a href="/#picks">民宿无边泳池宣传图与雨天实景</a></li>
+        <li><span class="rank">3</span><a href="/#picks">公益直播间物资去向说明</a></li>
+        <li><span class="rank">4</span><a href="/#picks">自称三甲医院医生的账号认证核查</a></li>
+        <li><span class="rank">5</span><a href="/#picks">网红餐厅菜品宣传图与出餐实拍</a></li>
+      </ol>
+    </div>
+
+    <div class="side-card notice-box">
+      <h3>收录说明</h3>
+      <p><strong>在库条目 128 条</strong>，其中 37 条附官方通报，29 条有当事方书面回应。示例条目均标注获取时间，不提供原帖外链。</p>
+      <p style="margin-bottom:0">更新时间：2026-11-08 10:00，对应“最新更新”板块前三项。</p>
+    </div>
+
+    <div class="side-card">
+      <h3>站内查找</h3>
+      <p style="font-size:var(--fs-13);color:var(--muted);margin-bottom:10px">输入条目关键词或平台名，匹配本页可见内容。</p>
+      <form class="search" role="search" id="sideSearchForm" onsubmit="return false;" style="width:100%">
+        <input type="search" id="sideSearchInput" placeholder="如：民宿、健身房、通报" aria-label="站内查找" autocomplete="off" style="flex:1">
+        <button type="submit" id="sideSearchBtn">查找</button>
+      </form>
+      <div class="search-feedback" id="sideFeedback" role="status" aria-live="polite"></div>
+    </div>
+  </aside>
+</div>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <div class="f-brand">
+          <svg viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+            <rect width="64" height="64" rx="14" fill="#31456f"/>
+            <circle cx="24" cy="24" r="10" fill="#ff8f5a"/>
+            <circle cx="40" cy="40" r="10" fill="#ffd166"/>
+            <path d="M24 34v12h12" stroke="#fff" stroke-width="4" fill="none" stroke-linecap="round"/>
+          </svg>
+          <span class="brand-text">极品反差爆料</span>
+        </div>
+        <p>用原文、时间与参数对照网络上的形象落差。</p>
+        <p style="margin-top:10px">整理日：2026-11-08</p>
+      </div>
+      <div>
+        <h4>内容栏目</h4>
+        <ul>
+          <li><a href="/#overview">领域概览</a></li>
+          <li><a href="/#picks">精选内容推荐</a></li>
+          <li><a href="/#latest">最新更新</a></li>
+          <li><a href="/#channels">分类入口</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>深度与指南</h4>
+        <ul>
+          <li><a href="/#deep">深度解析</a></li>
+          <li><a href="/#guide">体验指南</a></li>
+          <li><a href="/#faq">常见问答</a></li>
+          <li><a href="/#ranking">核查时间线</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>互动与其他</h4>
+        <ul>
+          <li><a href="/#comments">读者评论</a></li>
+          <li><a href="/#news">相关资讯</a></li>
+          <li><a href="/#rec">相关推荐</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="disclaimer">示例数据说明：页面中的条目名称、平台账号、订单编号、文件编号均为演示用示例，日期分布在2026年10月28日至11月8日之间，不构成对任何真实商家或个人的事实认定。涉及真实主体的内容请以官方通报与平台公告原文为准。</p>
+    <div class="footer-bottom">
+      <span>© 2026 极品反差爆料 · 内容观察与示例整理</span>
+      <span>更新项对应：11月7日条目入库、11月8日时间线第3版、11月6日物资说明</span>
+    </div>
+  </div>
+</footer>
+
+<button id="toTop" type="button" aria-label="回到顶部">↑</button>
+
+<script>
+(function(){
+  var menuBtn = document.getElementById('menuBtn');
+  var nav = document.getElementById('siteNav');
+  if(menuBtn && nav){
+    menuBtn.addEventListener('click', function(){
+      var open = nav.classList.toggle('open');
+      menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    nav.addEventListener('click', function(e){
+      if(e.target.tagName === 'A'){
+        nav.classList.remove('open');
+        menuBtn.setAttribute('aria-expanded','false');
+      }
+    });
+  }
+
+  // 回到顶部
+  var toTop = document.getElementById('toTop');
+  function onScroll(){
+    if(window.scrollY > 500){ toTop.classList.add('show'); }
+    else { toTop.classList.remove('show'); }
+    highlightSide();
+  }
+  toTop.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+
+  // 侧栏滚动高亮
+  var sideLinks = document.querySelectorAll('#sideNav a');
+  var sections = [];
+  sideLinks.forEach(function(a){
+    var id = a.getAttribute('href').replace('/#','');
+    var el = document.getElementById(id);
+    if(el) sections.push({id:id, el:el, link:a});
+  });
+  function highlightSide(){
+    var pos = window.scrollY + 140;
+    var current = sections[0];
+    sections.forEach(function(s){
+      if(s.el.offsetTop <= pos) current = s;
+    });
+    sideLinks.forEach(function(a){ a.classList.remove('active'); });
+    if(current) current.link.classList.add('active');
+  }
+
+  // 站内查找
+  var searchInput = document.getElementById('searchInput');
+  var searchBtn = document.getElementById('searchBtn');
+  var searchForm = document.getElementById('searchForm');
+  var feedback = document.getElementById('sideFeedback');
+  var mainCol = document.querySelector('.main-col');
+
+  function clearMarks(root){
+    var marks = root.querySelectorAll('mark');
+    marks.forEach(function(m){
+      var parent = m.parentNode;
+      while(m.firstChild){ parent.insertBefore(m.firstChild, m); }
+      parent.removeChild(m);
+      parent.normalize();
+    });
+  }
+  function escapeReg(s){ return s.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'); }
+
+  function runSearch(keyword){
+    clearMarks(mainCol);
+    if(!keyword){ feedback.classList.remove('show'); feedback.textContent=''; return; }
+    var walker = document.createTreeWalker(mainCol, NodeFilter.SHOW_TEXT, null);
+    var nodes = [];
+    var n;
+    while(n = walker.nextNode()){
+      if(n.nodeValue.trim() && n.parentNode.tagName !== 'SCRIPT'){
+        nodes.push(n);
+      }
+    }
+    var re = new RegExp(escapeReg(keyword), 'gi');
+    var count = 0;
+    var firstMark = null;
+    nodes.forEach(function(node){
+      if(re.test(node.nodeValue)){
+        re.lastIndex = 0;
+        var span = document.createElement('span');
+        span.innerHTML = node.nodeValue.replace(re, function(m){ return '<mark>'+m+'</mark>'; });
+        // 用片段替换原文本节点
+        var frag = document.createDocumentFragment();
+        while(span.firstChild){ frag.appendChild(span.firstChild); }
+        node.parentNode.replaceChild(frag, node);
+        count++;
+      }
+      re.lastIndex = 0;
+    });
+    if(count === 0){
+      feedback.classList.add('show');
+      feedback.textContent = '未找到“'+keyword+'”。可试试：民宿、健身房、通报、账号、物资。';
+    } else {
+      var markEls = mainCol.querySelectorAll('mark');
+      if(markEls.length){
+        firstMark = markEls[0];
+        var y = firstMark.getBoundingClientRect().top + window.scrollY - 150;
+        window.scrollTo({top:y, behavior:'smooth'});
+      }
+      feedback.classList.add('show');
+      feedback.textContent = '在'+count+'处匹配到“'+keyword+'”，已定位到第一处。';
+    }
+  }
+
+  if(searchBtn && searchInput){
+    searchBtn.addEventListener('click', function(){
+      runSearch(searchInput.value.trim());
+    });
+    searchInput.addEventListener('keydown', function(e){
+      if(e.key === 'Enter'){ e.preventDefault(); runSearch(searchInput.value.trim()); }
+    });
+  }
+
+  var sideSearchForm = document.getElementById('sideSearchForm');
+  var sideSearchInput = document.getElementById('sideSearchInput');
+  var sideFeedback = document.getElementById('sideFeedback');
+  if(sideSearchForm && sideSearchInput){
+    var doSideSearch = function(){
+      var kw = sideSearchInput.value.trim();
+      if(searchInput) searchInput.value = kw;
+      runSearch(kw);
+      if(sideFeedback){
+        var fb = document.getElementById('sideFeedback');
+        if(kw){ sideFeedback.classList.add('show'); } else { sideFeedback.classList.remove('show'); sideFeedback.textContent=''; }
+      }
+    };
+    sideSearchForm.addEventListener('submit', function(e){ e.preventDefault(); doSideSearch(); });
+    sideSearchInput.addEventListener('keydown', function(e){
+      if(e.key === 'Enter'){ e.preventDefault(); doSideSearch(); }
+    });
+  }
+
+  window.addEventListener('scroll', onScroll, {passive:true});
+  onScroll();
+  highlightSide();
+})();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "name": "极品反差爆料",
+      "description": "记录网络热点中的反差案例，按原文、时间线与回应分层核对。",
+      "inLanguage": "zh-CN"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "宣传图与实拍差距多大才算“反差”？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "没有统一阈值。看差异是否改变消费者判断：份量、面积、可用性、安全条件属于关键项；色调、光线属于表现项。餐厅菜品份量差三分之一，多数平台会认定为图文不符；整体偏色但份量一致，通常只作提示。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "官方通报里“责令整改”和“虚假宣传”差在哪？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "前者是行政措施，后者是需要处罚决定书支撑的定性。11月7日的餐饮门店说明只写到“存在差异，已责令整改”，未使用“虚假宣传”。转述时加上定性词，属于超出原文范围的表述。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "当事人删帖之后，条目还会保留吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "保留，但会标注“原帖已删除”与删除时间。删帖本身也是时间线上的一环，比如考研经验帖条目在11月1日20:15后被删除，条目里记录了发帖与删帖的时间差。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "为什么有的条目写“待通报”，不直接给结论？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "因为手头只有单方材料。医生账号认证核查那条，只有账号页面截图与医院官网名单，缺平台认证后台信息，结论强度只能到“存疑”。写“待通报”是留出补证空间。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "平台订单截图能当作对照材料吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "能，但要满足两个条件：截图含订单号尾号与下单时间；截图时间与入住或消费时间对得上。民宿条目里的订单尾号7731与入住日期10月31日，就是靠这两项完成对照。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "普通人遇到图文不符，最有效的做法是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "先保留订单页与现场实拍的原图，不要只截屏幕。然后在平台内发起“图文不符”投诉，附订单号与照片属性。多数平台的处理时限是3—7个工作日，比发帖曝光更容易拿到退款或整改反馈。"
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</body>
+  </html>
